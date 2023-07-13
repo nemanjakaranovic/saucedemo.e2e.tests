@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:run": "npx cypress run",
+    "cy:run-login-tests": "cypress run -s 'cypress/e2e/tests/login.spec.cy.js'",
+    "cy:run-shop-tests": "cypress run -s 'cypress/e2e/tests/shop.spec.cy.js'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.17.1"
+    "cypress": "12.17.1",
+    "cypress-xpath": "^2.0.1"
   }
 }
